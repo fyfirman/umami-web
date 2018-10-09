@@ -13,6 +13,13 @@ mempermudah Mahasiswa TI Unpad untuk mengakses dan mengunduh materi-materi perku
 ## Sasaran Pengguna
 Mahasiswa Teknik Informatika FMIPA Unpad
 
+## Mockup
+![Mockup Homepage](https://raw.githubusercontent.com/fyfirman/umami-web/master/resources/mockup/Mockup.jpg)
+![Mockup List Materi](https://raw.githubusercontent.com/fyfirman/umami-web/master/resources/mockup/Mockup1.png)
+
+## Skema Database
+![ERD](https://raw.githubusercontent.com/fyfirman/umami-web/master/resources/database-schemes/erd.jpg)
+![Skema Database (Table)](https://raw.githubusercontent.com/fyfirman/umami-web/master/resources/database-schemes/table.jpg)
 ## Authors
 
 * **Firmansyah Yanuar - 140810170051** -  [fyfirman](https://github.com/fyfirman)

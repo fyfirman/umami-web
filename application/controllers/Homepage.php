@@ -6,7 +6,7 @@ class Homepage extends CI_Controller {
 	{
 		$this->load->view('component/header.php');
 		$this->load->view('component/navbar.php');
-		$this->load->view('component/content.php');
+		$this->load->view('main-content/home.php');
 		$this->load->view('component/footer.php');
 	}
 }

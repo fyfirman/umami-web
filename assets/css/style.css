@@ -23,7 +23,7 @@
 table,ul{  
   font-size: 10px; 
   float: center;
-  color: grey;
+  color: grey; 
 }  
 
 tr {  
@@ -73,11 +73,10 @@ nav ul li{
 
 /*header*/
 header{
-  background: grey;
   text-align: center;
-  height: 200px;
-  padding: 30px;
-  background: linear-gradient(to right, #00ccff,  #000099);
+  height: 350px;
+  padding: 75px;
+  background: linear-gradient(to right, #0099cc,  #1053ae);
   color:#000099;
 }
 h1{
@@ -87,13 +86,17 @@ h1{
 /*body*/
 body{
   font-family: 'museo-slab',arial,sans-serif;
-  background:   #F7F8FA;
+  background: blue;
+}
+
+.content{
+  background: #F7F8FA;
 }
 
 .materi{
   border: 1px solid ;
   padding : 10px;
-
+  background: white;
 }
 
 

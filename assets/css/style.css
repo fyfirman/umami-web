@@ -91,6 +91,7 @@ body{
 
 .content{
   background: #F7F8FA;
+  margin:0;
 }
 
 .materi{
@@ -107,15 +108,13 @@ footer{
   text-indent: 50px;
 }
 
-.footer-text{
-  font-size: 20px;
-}
+
 .copyright{
   font-size: 10px;
   padding:;
 }
 
-.footer-text, .copyright{
+.footer-logo, .copyright{
   padding: 10px
 }
 

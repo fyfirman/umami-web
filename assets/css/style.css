@@ -87,23 +87,13 @@ h1{
 /*body*/
 body{
   font-family: 'museo-slab',arial,sans-serif;
+  background:   #F7F8FA;
 }
-#tabel{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-  margin-left: 100px;
-  margin-top: 0px;
-  margin-right: 100px;
 
-}
-#tabel > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
+.materi{
+  border: 1px solid ;
+  padding : 10px;
+
 }
 
 
@@ -114,15 +104,18 @@ footer{
   text-indent: 50px;
 }
 
-.footer-copy{
+.footer-text{
   font-size: 20px;
 }
-.footer-copy-2{
+.copyright{
   font-size: 10px;
   padding:;
 }
 
-.footer-copy, .footer-copy-2{
+.footer-text, .copyright{
   padding: 10px
 }
 
+.gradient-line{
+
+}

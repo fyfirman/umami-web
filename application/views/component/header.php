@@ -6,9 +6,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
   <title>Umami</title>
   <meta charset="utf-8">
-  <link href="<?php echo base_url()?>/assets/css/
-  .css" rel="stylesheet" />
+
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="<?php echo base_url()?>assets/js/loading-spinner.js""></script>
+
+  <!-- Style -->
+  <link href="<?php echo base_url()?>assets/css/style.css" rel="stylesheet" />
+  <link href="<?php echo base_url()?>assets/css/loading-spinner.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- Loading Section -->
+  <div id="overlay">
+    <div class="spinner"></div>
+
+  </div>
+  <script src="<?php echo base_url()?>assets/js/loading-spinner.js""></script>

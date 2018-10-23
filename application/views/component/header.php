@@ -23,4 +23,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="spinner"></div>
 
   </div>
-  <script src="<?php echo base_url()?>assets/js/loading-spinner.js""></script>

@@ -95,9 +95,18 @@ body{
 }
 
 .materi{
-  border: 1px solid ;
+  border: 1px solid;
   padding : 10px;
   background: white;
+}
+
+
+/*Download*/
+.download-button{
+  border: 1px solid;
+  padding : 10px;
+  background: rgba(0,0,0,0);
+  color:white;
 }
 
 

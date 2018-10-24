@@ -88,6 +88,68 @@ body{
   font-family: 'museo-slab',arial,sans-serif;
   background: blue;
 }
+h3,h4{
+  margin:0;
+    text-align: left;
+}   
+section{
+  background-color: #F2F5DE;
+  margin:0;
+  padding: 100px;
+}
+#tabel{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: 100px;
+  text-decoration-color: black;
+}
+#tabel > div {
+  border: 1px solid black;
+  text-align: left;
+  text-indent: 20px; 
+  padding: 10px;
+  font-size: 20px;
+}
+/*navigasi*/
+/*tampilan paling atas*/
+.tempat{
+  width: 20%;
+  margin-left: 5%;
+}
+
+.atas, nav{
+  margin-left:;
+}
+/*paging*/
+.center{
+  text-align: center;
+}
+.pagination {
+    display: inline-block;
+    background-color: white;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+
+.pagination a.active {
+    background-color: #7D8CA3;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #36494E;color: white;}
 
 .content{
   background: #F7F8FA;

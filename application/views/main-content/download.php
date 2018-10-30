@@ -12,6 +12,59 @@
 
 
 <div class="content">
-	<div class=" container">  
+	<div class="container">  
+		<h4 style="text-indent: 50px; margin-top:30px; color:#727272;">File lainnya</h4>
+		<a href="#">
+		    <div class="File col-md-2" style="margin-left:0;">
+		     	<div align="center" style="margin-top:10px;">
+		      		<div class="circle" >
+		        		<h2 style="margin-top: 35px;">PDF</h2>
+		      		</div>
+		      	</div>
+		      	<h4 style="text-align: center; margin-top: 30px; color:#727272;">Nama-Fileeeee....</h4>
+		    </div>
+		</a>
+		<a href="#">
+		    <div class="File col-md-2">
+		    	<div align="center" style="margin-top:10px;">
+		      		<div class="circle" >
+		        		<h2 style="margin-top: 35px;">PDF</h2>
+		      		</div>
+		      	</div>
+		      	<h4 style="text-align: center; margin-top: 30px;  color:#727272;">Nama-Fileeeee....</h4>
+		    </div>
+		</a>
+		<a href="#">
+		     <div class="File col-md-2">
+			    <div align="center" style="margin-top:10px;">
+			    	<div class="circle" >
+			        	<h2 style="margin-top: 35px;">PDF</h2>
+			      	</div>
+			    </div>
+			    <h4 style="text-align: center; margin-top: 30px;color:#727272;">Nama-Fileeeee....</h4>
+		    </div>
+		</a>
+		<a href="#">
+		    <div class="File col-md-2">
+			    <div align="center" style="margin-top:10px;">
+				    <div class="circle" >
+				        <h2 style="margin-top: 35px;">PDF</h2>
+				    </div>
+			    </div>
+			    <h4 style="text-align: center; margin-top: 30px;color:#727272;">Nama-Fileeeee....</h4>
+		    </div>
+		</a>
+		<a href="#">
+		    <div class="File col-md-2">
+		        <div align="center" style="margin-top:10px;">
+			        <div class="circle" >
+			           <h2 style="margin-top: 35px;">PDF</h2>
+			        </div>
+		        </div>
+		        <h4 style="text-align: center; margin-top: 30px;color:#727272;">Nama-Fileeeee....</h4>
+		    </div>
+		</a>
 	</div>
+</div>
+
 

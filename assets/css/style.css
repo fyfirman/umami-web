@@ -86,7 +86,7 @@ h1{
 /*body*/
 body{
   font-family: 'museo-slab',arial,sans-serif;
-  background: blue;
+  /*background: blue;*/
 }
 h3,h4{
   margin:0;
@@ -154,6 +154,7 @@ section{
 .content{
   background: #F7F8FA;
   margin:0;
+  padding-bottom: 20px;
 }
 
 .materi{
@@ -165,18 +166,18 @@ section{
 
 /*Download*/
 .download-button{
-  border: 1px solid;
-  padding : 10px;
-  background: rgba(0,0,0,0);
-  color:white;
 }
-
 
 /*footer*/
 footer{
   background: #e8e9ed;
   height: 50px;
   text-indent: 50px;
+}
+
+.footer-color{
+  height: 5px;
+  background:  linear-gradient(to right, #0099cc,  #1053ae);
 }
 
 

@@ -88,15 +88,36 @@ body{
   font-family: 'museo-slab',arial,sans-serif;
   /*background: blue;*/
 }
+/*list-materi*/
 h3,h4{
   margin:0;
-    text-align: left;
-}   
+  text-align: left;
+}  
+
 section{
   background-color: #F2F5DE;
   margin:0;
   padding: 100px;
 }
+.circle2, .circle3{
+  width: 40px;
+  height: 40px;
+  margin top:2px;
+  margin-left:5px;
+  border-radius: 50%;
+  overflow:hidden;
+  color: white;
+  float:left;
+}
+
+.circle2{
+  background: linear-gradient(to right, #e62420,  #a80d0d);
+}
+
+.circle3{
+  background: linear-gradient(to right, #e68620,  #e86607);  
+}
+
 #tabel{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -110,10 +131,16 @@ section{
 #tabel > div {
   border: 1px solid black;
   text-align: left;
-  text-indent: 20px; 
   padding: 10px;
   font-size: 20px;
+  -moz-box-shadow: 0px 0px 25px; 
+  -webkit-box-shadow: 0px 0px 10px #bababa; 
 }
+
+div>h5{
+  text-align: center; margin-top:12px; font-size: 17px;
+}
+
 /*navigasi*/
 /*tampilan paling atas*/
 .tempat{
@@ -142,7 +169,6 @@ section{
     border: 1px solid #ddd;
 }
 
-
 .pagination a.active {
     background-color: #7D8CA3;
     color: white;
@@ -151,6 +177,7 @@ section{
 
 .pagination a:hover:not(.active) {background-color: #36494E;color: white;}
 
+/*home*/
 .content{
   background: #F7F8FA;
   margin:0;

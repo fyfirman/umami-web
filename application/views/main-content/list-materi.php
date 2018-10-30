@@ -3,19 +3,89 @@
   <h3>Matematika Diskrit</h3>
   <h4>Dosen : Akik Hidayat</h4>
   <div id="tabel">
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
-    <div><a href="url">Language</a></div>
+    <div>
+      <div class="circle2"><h5>PDF</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+   
+    <div>
+      <div class="circle2"><h5>PDF</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+   
+    <div>
+      <div class="circle2"><h5>PDF</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="circle3"><h5>PPT</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+    
+    <div>
+      <div class="circle3"><h5>PPT</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+    
+    <div>
+      <div class="circle3"><h5>PPT</h5></div>
+      <div style="margin-top: 5px;text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="circle2"><h5>PDF</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="circle2"><h5>PDF</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+    
+    <div>
+      <div class="circle2"><h5>PDF</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+    
+    <div>
+      <div class="circle3"><h5>PPT</h5></div>
+      <div style="margin-top: 5px;text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+    
+    <div>
+      <div class="circle3"><h5>PPT</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div>
+    </div>
+    
+    <div><div class="circle3"><h5>PPT</h5></div>
+      <div style="margin-top: 5px; text-indent: 20px;">
+          <a href="url">Language</a>
+      </div></div>
   </div>
+
   <div class="center">
     <br>
     </br>

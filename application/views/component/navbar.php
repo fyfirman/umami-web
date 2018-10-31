@@ -5,7 +5,7 @@
     <!-- Dropdown menu -->
     <li class="nav-item navbar-left">
         <div class="dropdown">
-        <span style="color: #1060f2">Course</span>
+        <span style="color: #1a67f2">Course</span>
         <div class="dropdown-content">
           <p>Course 1</p>
           <p>Course 2</p>

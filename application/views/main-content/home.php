@@ -12,7 +12,7 @@
     
 <!-- Body -->
 <div class="content">
-<div class=" container" style="margin-bottom: 20px;">  
+<div class=" container">  
   <?php for ($i=0; $i < 7; $i++): ?>
     <div class="list-materi row">
       <h3>Semester <?php echo $i+1?></h3>

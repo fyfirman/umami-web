@@ -233,9 +233,6 @@ footer{
 }
 
 /* Expanding Searchbar */
-.searchbar-container{
-  /* padding-top: 10px; */
-}
 
 .search-form .form-group {
   float: right !important;
@@ -271,7 +268,6 @@ footer{
 .search-form .form-group:hover,
 .search-form .form-group.hover {
   width: 100%;
-  border-radius: 4px 25px 25px 4px;
 }
 .search-form .form-group span.form-control-feedback {
   position: absolute;

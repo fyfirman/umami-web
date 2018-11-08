@@ -3,88 +3,22 @@
   <h3>Matematika Diskrit</h3>
   <h4>Dosen : Akik Hidayat</h4>
   <div id="tabel">
+    <?php for ($i=0; $i < 6; $i++):?>
     <div>
       <div class="circle2"><h5>PDF</h5></div>
       <div style="margin-top: 5px; text-indent: 20px;">
           <a href="url">Language</a>
       </div>
     </div>
-   
-    <div>
-      <div class="circle2"><h5>PDF</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-   
-    <div>
-      <div class="circle2"><h5>PDF</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-
     <div>
       <div class="circle3"><h5>PPT</h5></div>
       <div style="margin-top: 5px; text-indent: 20px;">
           <a href="url">Language</a>
       </div>
     </div>
-    
-    <div>
-      <div class="circle3"><h5>PPT</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-    
-    <div>
-      <div class="circle3"><h5>PPT</h5></div>
-      <div style="margin-top: 5px;text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-
-    <div>
-      <div class="circle2"><h5>PDF</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-
-    <div>
-      <div class="circle2"><h5>PDF</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-    
-    <div>
-      <div class="circle2"><h5>PDF</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-    
-    <div>
-      <div class="circle3"><h5>PPT</h5></div>
-      <div style="margin-top: 5px;text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-    
-    <div>
-      <div class="circle3"><h5>PPT</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-    
-    <div><div class="circle3"><h5>PPT</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div></div>
+    <?php endfor ?>
   </div>
+    
 
   <div class="center">
     <br>

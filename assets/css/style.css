@@ -26,6 +26,20 @@ nav ul li{
   padding: 5px 0 0 0;
 }
 
+/*Search*/
+.search{
+  padding:3px 7px;
+  /*border:0px solid #dbdbdb;*/
+}
+
+button{
+  position: relative;
+  padding:6.5px 7px;
+  left:-45px;
+  border: 0px;
+  background: white;
+
+}
 /* Expanding Searchbar */
 .search-form .form-group {
   float: right !important;
@@ -225,6 +239,7 @@ div>h5{
   border: 1px solid;
   padding : 10px;
   background: #ffffff;
+  margin: 10px;
 }
 
 

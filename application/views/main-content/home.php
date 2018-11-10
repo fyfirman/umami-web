@@ -1,8 +1,8 @@
 <!-- header -->
 <header>
-    <h1 style="font-size: 72px; color:white;">Unduh Materi-Materi IT!</h1>
+    <h1 style="">Unduh Materi-Materi IT!</h1>
     <form>
-      <input type="text" name="search" placeholder="Apa yang Kamu Cari?" size=75px  style="height: 48px; text-indent: 15px;">
+      <input type="text" name="search" placeholder="Apa yang Kamu Cari?" size=75px  style="">
       <button class="search-button"style="height: 45px">
         <i class="fa fa-search"></i>
       </button>

@@ -123,8 +123,13 @@ header{
   background: linear-gradient(to right, #0099cc,  #1053ae);
   color:#000099;
 }
-h1{
-  color: white;
+header>h1{
+  font-size: 72px; 
+  color:white;
+}
+form>input{
+  height: 48px; 
+  text-indent: 15px;  
 }
 
 /*body*/
@@ -236,10 +241,19 @@ div>h5{
 }
 
 .materi{
-  border: 1px solid;
-  padding : 10px;
+  text-indent: 40px;
+  color:#3c3d3e;
+  padding : 18px;
   background: #ffffff;
   margin: 10px;
+  overflow:hidden;
+  border: 1px solid #bababa;
+  -moz-box-shadow: 0px 0px 25px; 
+  -webkit-box-shadow: 0px 0px 10px #bababa; 
+}
+
+div>h3{
+  color:#3c3d3e;
 }
 
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2018 at 09:33 AM
+-- Generation Time: Nov 25, 2018 at 10:40 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -63,6 +63,7 @@ CREATE TABLE `materi` (
   `id_matkul` int(11) NOT NULL,
   `id_user` int(11) DEFAULT NULL,
   `id_materi` int(11) NOT NULL,
+  `nama_materi` varchar(30) NOT NULL,
   `jenis` enum('ppt','doc','pdf','') NOT NULL,
   `link_download` varchar(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -71,11 +72,21 @@ CREATE TABLE `materi` (
 -- Dumping data for table `materi`
 --
 
-INSERT INTO `materi` (`id_matkul`, `id_user`, `id_materi`, `jenis`, `link_download`) VALUES
-(101, 1, 1011, 'ppt', 'http://bit.ly/Alprog1'),
-(102, 1, 1021, 'pdf', 'http://bit.ly/Login1'),
-(201, 1, 2011, 'doc', 'http://bit.ly/SisdatI1'),
-(202, 1, 2021, 'ppt', 'http://bit.ly/Strukdat');
+INSERT INTO `materi` (`id_matkul`, `id_user`, `id_materi`, `nama_materi`, `jenis`, `link_download`) VALUES
+(101, 1, 1011, 'Operasi File', 'ppt', 'http://bit.ly/Alprog1'),
+(102, 1, 1021, 'Logika Predikat', 'pdf', 'http://bit.ly/Login1'),
+(201, 1, 2011, 'DB-01', 'doc', 'http://bit.ly/SisdatI1'),
+(202, 1, 2021, 'Fungsi', 'ppt', 'http://bit.ly/Strukdat'),
+(301, 1, 3011, 'Relasi', 'ppt', 'http://bit.ly/Matdis1'),
+(302, 1, 3021, 'Sitem Data Terdistribusi', 'pdf', 'http://bit.ly/SisdatII'),
+(401, 1, 4011, 'Machine Learning', 'ppt', 'http://bit.ly/AI1'),
+(402, 1, 4021, 'Kemanan Jaringan', 'doc', 'http://bit.ly/Jarkom1'),
+(501, 1, 5011, 'Konsep Dasar Kewirausahaan', 'ppt', 'http://bit.ly/Entre'),
+(502, 1, 5021, 'Konsep dasar rekayasa perangka', 'doc', 'http://bit.ly/RPL'),
+(601, 1, 6011, 'Bahasa Regular Automata', 'doc', 'http://bit.ly/TBA'),
+(602, 1, 6021, 'Manajemen Proyek', 'ppt', 'http://bit.ly/RPL2'),
+(701, 1, 7011, 'Konsep dan Fungsi Data mining', 'ppt', 'http://bit.ly/DatMin'),
+(702, 1, 7021, 'Konsep Manajemen Project', 'doc', 'http://bit.ly/ManajemenProject');
 
 -- --------------------------------------------------------
 
@@ -175,7 +186,7 @@ ALTER TABLE `dosen`
 -- AUTO_INCREMENT for table `materi`
 --
 ALTER TABLE `materi`
-  MODIFY `id_matkul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=203;
+  MODIFY `id_matkul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=703;
 
 --
 -- AUTO_INCREMENT for table `matkul`

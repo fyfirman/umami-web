@@ -5,12 +5,13 @@ class Homepage extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('user_model');
+		$this->load->model('Materi_model');
 	}
 
 	public function index()
 	{
-		$data['user'] = $this->user_model->get_data()->result();
+		$data['matkul'] = $this->Materi_model->get_matkul_of_semester();
+		var_dump($data['matkul']);
 		$this->load->view('component/header.php');
 		$this->load->view('component/navbar.php');
 		$this->load->view('main-content/home.php',$data);

@@ -140,7 +140,8 @@ section{
   margin:0;
   padding: 50px;
 }
-.circle2, .circle3{
+
+.type-containter{
   width: 40px;
   height: 40px;
   margin top:2px;
@@ -151,12 +152,16 @@ section{
   float:left;
 }
 
-.circle2{
+.type-ppt{
   background: linear-gradient(to right, #e62420,  #a80d0d);
 }
-
-.circle3{
+.type-pdf{
   background: linear-gradient(to right, #e68620,  #e86607);  
+}
+
+.type-containter > h5{
+  text-align: center;
+  margin-top: 12px;
 }
 
 #tabel{
@@ -179,6 +184,7 @@ section{
   -moz-box-shadow: 0px 0px 25px; 
   -webkit-box-shadow: 0px 0px 10px #bababa; 
 }
+
 
 
 /*navigasi*/
@@ -271,6 +277,7 @@ div>h3{
   color: white;
 }
 
+.circle 
 /*footer*/
 footer{
   background: #FFFFFF;

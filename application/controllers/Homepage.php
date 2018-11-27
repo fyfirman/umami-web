@@ -10,8 +10,13 @@ class Homepage extends CI_Controller {
 
 	public function index()
 	{
-		$data['matkul'] = $this->Materi_model->get_matkul_of_semester();
-		var_dump($data['matkul']);
+		$data['matkul'] = $this->Materi_model->get_matkul();
+		
+		// Debug data
+		// echo '<pre>';
+		// var_dump($data['matkul']);
+		// echo '</pre>';
+
 		$this->load->view('component/header.php');
 		$this->load->view('component/navbar.php');
 		$this->load->view('main-content/home.php',$data);

@@ -26,13 +26,15 @@ nav ul li{
   padding: 5px 0 0 0;
 }
 
-/*Search*/
-.search{
-  padding:3px 7px;
-  /*border:0px solid #dbdbdb;*/
+/*Middle Home Searchbar*/
+.search-input{
+  width: 50%;
+  height: 48px;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border-radius: 5px;
 }
-
-button{
+.search-button{
   position: relative;
   padding:6.5px 7px;
   left:-45px;
@@ -96,7 +98,7 @@ button{
 .dropdown {
     position: relative;
     display: inline-block;
-    font-color:black;
+    color:black;
     text-align: left;
 }
 
@@ -116,33 +118,22 @@ button{
 }
 
 /*header*/
-header{
+.header{
   text-align: center;
   height: 350px;
   padding: 75px;
   background: linear-gradient(to right, #0099cc,  #1053ae);
-  color:#000099;
+  margin-bottom: 30px;
 }
-header>h1{
+.header h1{
   font-size: 72px; 
   color:white;
-}
-form>input{
-  height: 48px; 
-  text-indent: 15px;  
 }
 
 /*body*/
 body{
   font-family: 'museo-slab',arial,sans-serif;
-  /*background: blue;*/
 }
-/*list-materi*/
-h3,h4{
-  margin:0;
-  text-align: left;
-  color:#3c3d3e;
-}  
 
 section{
   background-color: #f7f8fa ;
@@ -189,13 +180,6 @@ section{
   -webkit-box-shadow: 0px 0px 10px #bababa; 
 }
 
-div>a{
-  color:#3c3d3e;
-}
-
-div>h5{
-  text-align: center; margin-top:12px; font-size: 17px;
-}
 
 /*navigasi*/
 /*tampilan paling atas*/

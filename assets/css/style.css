@@ -231,15 +231,20 @@ section{
 }
 
 .materi{
-  text-indent: 40px;
   color:#3c3d3e;
-  padding : 18px;
-  background: #ffffff;
+  padding: 18px 18px 18px 48px;
   margin: 10px;
-  overflow:hidden;
-  border: 1px solid #bababa;
-  -moz-box-shadow: 0px 0px 25px; 
-  -webkit-box-shadow: 0px 0px 10px #bababa; 
+  background: white;
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+  transition: 0.3s;
+}
+
+.materi:hover{
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 11px 3px rgba(20,23,28,.1);
+}
+
+.list-materi:hover a{
+  text-decoration: none !important;
 }
 
 div>h3{

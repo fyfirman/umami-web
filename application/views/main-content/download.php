@@ -1,5 +1,5 @@
 <!-- header -->
-<header>
+<header class="header col-md-12">
 	<div class="container" style="margin-bottom: 50px;">
 		<h1 style="font-size: 50px; color:white; text-align: left;">01 Pengantar DB Terdistribusi.pptx</h1>
 		<p style="color:white; text-align: left;">Mata Kuliah: Sistem Database II</p>

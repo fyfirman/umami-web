@@ -9,50 +9,96 @@
   margin-left:;
 }
 
-#coba{
-  color:black;
-}
-
 /*tampilan untuk pilihan*/
 .navtampil{
   max-height: 20px;
   /*border-bottom: 3px solid rgb(130, 130, 130);*/
   text-align: center;
   font-size: 15px;
-}
-table,ul{  
-  font-size: 10px; 
-  float: center;
-  color: grey; 
-}  
+  padding: 10px 0 0 0;
 
-tr {  
- vertical-align: top;  
-}  
-
-nav ul li a{
-  display: block;
-  font-size: .90em;
-  padding: 5px 10px 0 0;
-  color: grey;
-  text-decoration: none;
-  font-weight: 100px;
-  letter-spacing: 2px;
 }
 
 nav ul li{
-  /*float: left;*/
   display: inline-block;
-  text-transform: uppercase;
+  font-weight: bold;
   font-family: 'Open Sans';
-  padding: 10px;
+  padding: 5px 0 0 0;
 }
+
+/*Middle Home Searchbar*/
+.search-input{
+  width: 50%;
+  height: 48px;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border-radius: 5px;
+}
+.search-button{
+  position: relative;
+  padding:6.5px 7px;
+  left:-45px;
+  border: 0px;
+  background: white;
+
+}
+/* Expanding Searchbar */
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #3596e0;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
+
 
 /*dropdown*/
 .dropdown {
     position: relative;
     display: inline-block;
-    font-color:black;
+    color:black;
     text-align: left;
 }
 
@@ -72,35 +118,30 @@ nav ul li{
 }
 
 /*header*/
-header{
+.header{
   text-align: center;
   height: 350px;
   padding: 75px;
   background: linear-gradient(to right, #0099cc,  #1053ae);
-  color:#000099;
+  margin-bottom: 30px;
 }
-h1{
-  color: white;
+.header h1{
+  font-size: 72px; 
+  color:white;
 }
 
 /*body*/
 body{
   font-family: 'museo-slab',arial,sans-serif;
-  /*background: blue;*/
 }
-/*list-materi*/
-h3,h4{
-  margin:0;
-  text-align: left;
-  color:#3c3d3e;
-}  
 
 section{
   background-color: #f7f8fa ;
   margin:0;
-  padding: 100px;
+  padding: 50px;
 }
-.circle2, .circle3{
+
+.type-containter{
   width: 40px;
   height: 40px;
   margin top:2px;
@@ -111,12 +152,16 @@ section{
   float:left;
 }
 
-.circle2{
+.type-ppt{
   background: linear-gradient(to right, #e62420,  #a80d0d);
 }
-
-.circle3{
+.type-pdf{
   background: linear-gradient(to right, #e68620,  #e86607);  
+}
+
+.type-containter > h5{
+  text-align: center;
+  margin-top: 12px;
 }
 
 #tabel{
@@ -140,13 +185,7 @@ section{
   -webkit-box-shadow: 0px 0px 10px #bababa; 
 }
 
-div>a{
-  color:#3c3d3e;
-}
 
-div>h5{
-  text-align: center; margin-top:12px; font-size: 17px;
-}
 
 /*navigasi*/
 /*tampilan paling atas*/
@@ -192,9 +231,19 @@ div>h5{
 }
 
 .materi{
-  border: 1px solid;
-  padding : 10px;
+  text-indent: 40px;
+  color:#3c3d3e;
+  padding : 18px;
   background: #ffffff;
+  margin: 10px;
+  overflow:hidden;
+  border: 1px solid #bababa;
+  -moz-box-shadow: 0px 0px 25px; 
+  -webkit-box-shadow: 0px 0px 10px #bababa; 
+}
+
+div>h3{
+  color:#3c3d3e;
 }
 
 
@@ -228,6 +277,7 @@ div>h5{
   color: white;
 }
 
+.circle 
 /*footer*/
 footer{
   background: #FFFFFF;

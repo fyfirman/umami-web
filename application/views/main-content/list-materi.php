@@ -3,20 +3,14 @@
   <h3>Matematika Diskrit</h3>
   <h4>Dosen : Akik Hidayat</h4>
   <div id="tabel">
-    <?php for ($i=0; $i < 6; $i++):?>
-    <div>
-      <div class="type-containter type-pdf"><h5>PDF</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
+    <?php foreach ($materi as $obj):?>
+      <div>
+        <div class="type-containter type-<?php echo $obj['jenis'];?>"><h5>PDF</h5></div>
+        <div style="margin-top: 5px; text-indent: 20px;">
+            <a href="url"><?php echo $obj['nama_materi']; ?></a>
+        </div>
       </div>
-    </div>
-    <div>
-      <div class="type-containter type-ppt"><h5>PPT</h5></div>
-      <div style="margin-top: 5px; text-indent: 20px;">
-          <a href="url">Language</a>
-      </div>
-    </div>
-    <?php endfor ?>
+    <?php endforeach ?>
   </div>
     
 

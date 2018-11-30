@@ -12,9 +12,9 @@ class Download extends CI_Controller {
 		$data['materi'] = $this->Materi_model->get_materi_by_id($id_materi);
 		
 		// Debug data
-		echo '<pre>';
-		var_dump($data['materi']);
-		echo '</pre>';
+		// echo '<pre>';
+		// var_dump($data['materi']);
+		// echo '</pre>';
 
 		$this->load->view('component/header.php');
 		$this->load->view('component/navbar.php');

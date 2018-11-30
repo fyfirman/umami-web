@@ -93,30 +93,6 @@ nav ul li{
   font-size: 14px;
 }
 
-
-/*dropdown*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-    color:black;
-    text-align: left;
-}
-
-.dropdown-content {
-    color:black;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 /*header*/
 .header{
   text-align: center;
@@ -231,15 +207,20 @@ section{
 }
 
 .materi{
-  text-indent: 40px;
   color:#3c3d3e;
-  padding : 18px;
-  background: #ffffff;
+  padding: 18px 18px 18px 48px;
   margin: 10px;
-  overflow:hidden;
-  border: 1px solid #bababa;
-  -moz-box-shadow: 0px 0px 25px; 
-  -webkit-box-shadow: 0px 0px 10px #bababa; 
+  background: white;
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+  transition: 0.1s;
+}
+
+.materi:hover{
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 11px 3px rgba(20,23,28,.1);
+}
+
+.list-materi:hover a{
+  text-decoration: none !important;
 }
 
 div>h3{

@@ -20,7 +20,7 @@
       <div class="row">
         <?php foreach ($matkul as $obj):?>
           <?php if ($obj['semester'] == $i): ?>
-            <a class="col-md-4" href="<?php echo base_url()?>materi">
+            <a class="col-md-4" href="<?php echo base_url()?>materi/<?php echo $obj['id_matkul']?>">
                 <div class="materi" style=""><?php echo $obj['nama_matkul']; ?></div>
             </a>
           <?php endif ?>

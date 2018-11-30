@@ -32,14 +32,6 @@
           </div>
         </form>
     </div>
-    
-    <!-- Searchbar -->
-    <!-- <form class="navbar-form navbar-right" action="/action_page.php">
-      <input type="text" name="search" placeholder="Cari" style="border-radius: 2px;">
-      <button>
-        <i class="fa fa-search"></i>
-      </button>
-    </form> -->
 
   </ul>
 </nav>

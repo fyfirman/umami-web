@@ -8,9 +8,8 @@ class Download extends CI_Controller {
 		$this->load->model('Materi_model');
 	}
 	
-	public function index()
-	{
-		$data['materi'] = $this->Materi_model->get_materi_by_id(1011);
+	public function index($id_materi){
+		$data['materi'] = $this->Materi_model->get_materi_by_id($id_materi);
 		
 		// Debug data
 		echo '<pre>';

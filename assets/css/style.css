@@ -212,7 +212,7 @@ section{
   margin: 10px;
   background: white;
   box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .materi:hover{

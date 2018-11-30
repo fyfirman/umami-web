@@ -19,9 +19,9 @@
       <li class="nav-item navbar-left">
         <?php $login = true; ?> <!-- debug code -->
         <?php if($login):?>
-          <a href="<?php echo base_url()?>login">Login</a>
-        <?php else: ?>
           Halo fyfirman!
+        <?php else: ?>
+          <a href="<?php echo base_url()?>login">Login</a>
         <?php endif ?>
       </li>
     </div>

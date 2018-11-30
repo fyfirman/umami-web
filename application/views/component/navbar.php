@@ -3,7 +3,7 @@
   <ul class="navtampil">
 
     <!-- Dropdown menu -->
-    <div class="col-md-4">
+    <!-- <div class="col-md-4">
       <li class="nav-item navbar-left">
           <div class="dropdown">
           <span style="color: #1a67f2">Course</span>
@@ -14,8 +14,17 @@
           </div>
         </div>
       </li>
+    </div> -->
+    <div class="col-md-4">
+      <li class="nav-item navbar-left">
+        <?php $login = true; ?> <!-- debug code -->
+        <?php if($login):?>
+          <a href="<?php echo base_url()?>login">Login</a>
+        <?php else: ?>
+          Halo fyfirman!
+        <?php endif ?>
+      </li>
     </div>
-
     <!-- Logo -->
     <div class="col-md-4">
       <li class="nav-item"><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>/assets/img/umami-logo.png" style="width: 80px"></a></li>

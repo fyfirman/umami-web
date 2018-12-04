@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2018 at 10:40 AM
+-- Generation Time: Dec 04, 2018 at 06:47 AM
 -- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+-- PHP Version: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -108,10 +108,16 @@ CREATE TABLE `matkul` (
 INSERT INTO `matkul` (`id_matkul`, `id_dosen`, `nama_matkul`, `semester`) VALUES
 (101, 4, 'Algoritma Pemrograman', 1),
 (102, 6, 'Logika Informatika', 1),
+(103, 5, 'PTKI', 1),
 (201, 2, 'Sistem Database I', 2),
 (202, 13, 'Struktur Data', 2),
+(203, 6, 'Arsitektur dan Organisasi Komputer', 2),
 (301, 4, 'Matematika Diskrit', 3),
 (302, 2, 'Sistem Database II', 3),
+(303, 6, 'Metode Numerik', 3),
+(304, 11, 'Sistem Operasi', 3),
+(305, 11, 'Pemrograman Web', 3),
+(306, 9, 'Pemrograman Berorientasi Objek', 3),
 (401, 5, 'Artificial Intelligence', 4),
 (402, 10, 'Jaringan Komputer', 4),
 (501, 7, 'Entrepreneurship', 5),

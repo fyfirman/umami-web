@@ -183,8 +183,16 @@ div>h3{
   border: 1px solid;
   padding : 15px 100px 15px 100px;
   background: rgba(0,0,0,0);
+  text-decoration: none;
 }
 
+.download-button:hover{
+  background:white !important;
+  color:  #1053ae!important;
+  transition-delay: 0.2s;
+  text-decoration: none;
+  border-radius:5px;
+}
 
 .File{
   padding-top: 10px;
@@ -194,8 +202,12 @@ div>h3{
   overflow:hidden;
   background: white;
   box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+  transition: 0.3s;
 }
 
+.File:hover{
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 11px 3px rgba(20,23,28,.1);
+}
 
 .circle{
   width: 100px;

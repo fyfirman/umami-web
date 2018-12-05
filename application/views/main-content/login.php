@@ -10,10 +10,10 @@
 		</div>
 
 		<!-- Login Form -->
-		<form class="login">
-			<input type="text" id="login" class="fadeIn second signForm" name="login" placeholder="Username">
-			<input type="password" id="password" class="fadeIn third signForm" name="login" placeholder="Password">
-			<input type="submit" id="signButton" class="fadeIn fourth" value="Log In">
+		<form class="login" action="<?= base_url('login/login_action');?>" method="post">
+			<input type="text" id="login" class="fadeIn second signForm" name="username" placeholder="Username">
+			<input type="password" id="password" class="fadeIn third signForm" name="password" placeholder="Password">
+			<input type="submit" id="signButton" class="fadeIn fourth" value="Login">
 		</form>
 
 		<!-- Remind Passowrd -->

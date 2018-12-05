@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2018 at 06:47 AM
+-- Generation Time: Dec 05, 2018 at 05:31 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -51,7 +51,8 @@ INSERT INTO `dosen` (`id_dosen`, `nama_dosen`) VALUES
 (11, 'Rudi Rosadi, S.Si., M.Kom'),
 (12, 'Intan Nurma Yunita, M.T.'),
 (13, 'Aditya Pradana, M.Eng'),
-(14, 'Mira Suryani, M.Pd.');
+(14, 'Mira Suryani, M.Pd.'),
+(15, 'Dosen non TI');
 
 -- --------------------------------------------------------
 
@@ -79,6 +80,10 @@ INSERT INTO `materi` (`id_matkul`, `id_user`, `id_materi`, `nama_materi`, `jenis
 (202, 1, 2021, 'Fungsi', 'ppt', 'http://bit.ly/Strukdat'),
 (301, 1, 3011, 'Relasi', 'ppt', 'http://bit.ly/Matdis1'),
 (302, 1, 3021, 'Sitem Data Terdistribusi', 'pdf', 'http://bit.ly/SisdatII'),
+(302, 1, 3022, 'Introduction', 'ppt', 'bit.ly/Intro'),
+(302, 1, 3023, 'Disk Fundamentals', 'ppt', 'bit.ly/DiskFundamentals'),
+(302, 1, 3024, 'Linux File System Layout', 'ppt', 'bit.ly/LinuxFile'),
+(302, 1, 3025, 'Database Terdistribusi Modul', 'pdf', 'bit.ly/Modul'),
 (401, 1, 4011, 'Machine Learning', 'ppt', 'http://bit.ly/AI1'),
 (402, 1, 4021, 'Kemanan Jaringan', 'doc', 'http://bit.ly/Jarkom1'),
 (501, 1, 5011, 'Konsep Dasar Kewirausahaan', 'ppt', 'http://bit.ly/Entre'),
@@ -109,9 +114,18 @@ INSERT INTO `matkul` (`id_matkul`, `id_dosen`, `nama_matkul`, `semester`) VALUES
 (101, 4, 'Algoritma Pemrograman', 1),
 (102, 6, 'Logika Informatika', 1),
 (103, 5, 'PTKI', 1),
+(104, 15, 'Agama', 1),
+(105, 15, 'Pancasila', 1),
+(106, 15, 'Bahasa Indonesia', 1),
+(107, 15, 'Bahasa Inggris', 1),
+(108, 15, 'Manusia dan Sains', 1),
+(109, 15, 'Kalkulus I', 1),
 (201, 2, 'Sistem Database I', 2),
 (202, 13, 'Struktur Data', 2),
 (203, 6, 'Arsitektur dan Organisasi Komputer', 2),
+(204, 15, 'Fisika Informatika', 2),
+(205, 15, 'Statistika', 2),
+(206, 15, 'Kalkulus II', 2),
 (301, 4, 'Matematika Diskrit', 3),
 (302, 2, 'Sistem Database II', 3),
 (303, 6, 'Metode Numerik', 3),
@@ -120,10 +134,20 @@ INSERT INTO `matkul` (`id_matkul`, `id_dosen`, `nama_matkul`, `semester`) VALUES
 (306, 9, 'Pemrograman Berorientasi Objek', 3),
 (401, 5, 'Artificial Intelligence', 4),
 (402, 10, 'Jaringan Komputer', 4),
+(403, 8, 'Operasional Riset', 4),
+(404, 5, 'Sistem Informasi', 4),
+(405, 8, 'Pemrograman Berorientasi Objek II', 4),
+(406, 1, 'Desain User Interface ', 4),
+(407, 1, 'Etika Profesi', 4),
 (501, 7, 'Entrepreneurship', 5),
 (502, 7, 'Rekayasa Perangkat Lunak', 5),
+(503, 5, 'Kecakapan Antar Personal', 5),
+(504, 11, 'Telematika', 5),
 (601, 3, 'Teori Bahasa & Automata ', 6),
 (602, 8, 'Proyek Perangkat Lunak I', 6),
+(603, 10, 'Analisis Algoritma', 6),
+(604, 12, 'Interaksi Manusia dan Komputer', 6),
+(606, 12, 'Data Warehouse', 6),
 (701, 14, 'Data Mining', 7),
 (702, 11, 'Manajemen Project', 7);
 
@@ -186,7 +210,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `dosen`
 --
 ALTER TABLE `dosen`
-  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `materi`

@@ -44,6 +44,7 @@
     font-size: 24pt;
   }
 }
+
 /*body*/
 body{
   font-family: 'Raleway', sans-serif !important;
@@ -55,6 +56,7 @@ section{
   padding: 50px;
 }
 
+/*list-materi*/
 .type-containter{
   width: 40px;
   height: 40px;
@@ -87,18 +89,27 @@ section{
   margin-top: 50px;
   margin-right: 100px;
   text-decoration-color: black;
-}
 
+}
+  
 #tabel > div {
-  border: 1px solid #bababa;
   text-align: left;
   padding: 10px;
-  font-size: 20px;
-  background: #ffffff;
-  -moz-box-shadow: 0px 0px 25px; 
-  -webkit-box-shadow: 0px 0px 10px #bababa; 
+  font-size: 19px;
+  background: white;
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+  transition: 0.3s;
+}
+#tabel > div > a{
+  color:#3c3d3e;
+}
+#tabel > div:hover{
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 11px 3px rgba(20,23,28,.1);
 }
 
+#tabel > div > a:hover{
+  text-decoration: none !important;
+}
 
 
 /*navigasi*/
@@ -174,6 +185,7 @@ div>h3{
   background: rgba(0,0,0,0);
 }
 
+
 .File{
   padding-top: 10px;
   margin:19px;
@@ -181,9 +193,9 @@ div>h3{
   height: 200px;
   overflow:hidden;
   background: white;
- -moz-box-shadow: 0px 0px 25px; 
-  -webkit-box-shadow: 0px 0px 10px #bababa; 
+  box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
 }
+
 
 .circle{
   width: 100px;

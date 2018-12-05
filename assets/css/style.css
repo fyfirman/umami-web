@@ -1,7 +1,12 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700');
+
+
 /*navbar*/
 .nav-desktop{
   /*font-weight: bold;*/
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;;
   padding: 15px 0;
 }
 #brand-logo{
@@ -27,6 +32,7 @@
 .header h1{
   font-size: 72px; 
   color:white;
+  font-weight: 500;
 }
 @media (max-width : 600px) {
   .header{
@@ -40,7 +46,7 @@
 }
 /*body*/
 body{
-  font-family: 'museo-slab',arial,sans-serif;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 section{

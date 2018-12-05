@@ -26,72 +26,6 @@ nav ul li{
   padding: 5px 0 0 0;
 }
 
-/*Middle Home Searchbar*/
-.search-input{
-  width: 50%;
-  height: 48px;
-  color: rgba(0, 0, 0, 0.75);
-  padding: 10px;
-  border-radius: 5px;
-}
-.search-button{
-  position: relative;
-  padding:6.5px 7px;
-  left:-45px;
-  border: 0px;
-  background: white;
-
-}
-/* Expanding Searchbar */
-.search-form .form-group {
-  float: right !important;
-  transition: all 0.35s, border-radius 0s;
-  width: 32px;
-  height: 32px;
-  background-color: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  border-radius: 25px;
-  border: 1px solid #3596e0;
-}
-.search-form .form-group input.form-control {
-  padding-right: 20px;
-  border: 0 none;
-  background: transparent;
-  box-shadow: none;
-  display:block;
-}
-.search-form .form-group input.form-control::-webkit-input-placeholder {
-  display: none;
-}
-.search-form .form-group input.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  display: none;
-}
-.search-form .form-group input.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  display: none;
-}
-.search-form .form-group input.form-control:-ms-input-placeholder {
-  display: none;
-}
-.search-form .form-group:hover,
-.search-form .form-group.hover {
-  width: 100%;
-}
-.search-form .form-group span.form-control-feedback {
-  position: absolute;
-  top: -1px;
-  right: -2px;
-  z-index: 2;
-  display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-  color: #3596e0;
-  left: initial;
-  font-size: 14px;
-}
 
 /*header*/
 .header{
@@ -212,7 +146,7 @@ section{
   margin: 10px;
   background: white;
   box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
-  transition: 0.1s;
+  transition: 0.3s;
 }
 
 .materi:hover{
@@ -226,7 +160,6 @@ section{
 div>h3{
   color:#3c3d3e;
 }
-
 
 /*Download*/
 .download-button{

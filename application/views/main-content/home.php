@@ -2,12 +2,6 @@
 <header class="header col-md-12">
   <div class="container">
     <h1 style="">Unduh Materi-Materi IT!</h1>
-    <form >
-      <input class="search-input" type="text" name="search" placeholder='Apa yang Kamu Cari?'>
-      <button class="search-button" style="height: 43px">
-        <i class="fa fa-search"></i>
-      </button>
-    </form>
   </div>
 </header>
     

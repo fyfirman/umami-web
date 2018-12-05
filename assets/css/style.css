@@ -14,16 +14,12 @@
 @media (max-width : 600px) {
     #hello-message {display:none;}
     #brand-logo{text-align: left;}
-    .header h1{
-      font-size: 10px;
-    }
 }
 
 
 /*header*/
 .header{
   text-align: center;
-  height: 350px;
   padding: 75px;
   background: linear-gradient(to right, #0099cc,  #1053ae);
   margin-bottom: 30px;
@@ -32,7 +28,16 @@
   font-size: 72px; 
   color:white;
 }
-
+@media (max-width : 600px) {
+  .header{
+    /*height: 100%;*/
+    margin-bottom: 10px;
+    padding:15px;
+  }
+  .header h1{
+    font-size: 24pt;
+  }
+}
 /*body*/
 body{
   font-family: 'museo-slab',arial,sans-serif;

@@ -1,7 +1,7 @@
 <!-- header -->
 <header class="header col-md-12">
   <div class="container">
-    <h1 style="">Unduh Materi-Materi IT!</h1>
+    <h1>Unduh Materi-Materi IT!</h1>
   </div>
 </header>
     

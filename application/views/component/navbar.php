@@ -4,7 +4,7 @@
   <!-- Left -->
   <div id="hello-message" class="col-md-4">
         <?php if($login):?>
-          Halo fyfirman!
+          Halo <?= $this->session->userdata('username')?>!
         <?php endif ?>
     </div>
     <!-- Logo -->
@@ -15,7 +15,7 @@
     <!-- logout -->
     <div id="log" class="col-md-4 col-xs-6">
       <?php if($login):?>
-        <a href="">Logout <i class="fa fa-sign-out"></i></a>
+        <a href="<?= base_url('logout')?>">Logout <i class="fa fa-sign-out"></i></a>
       <?php else: ?>
         <a href="<?= base_url('login')?>">Login <i class="fa fa-sign-in"></i></a>
       <?php endif ?>

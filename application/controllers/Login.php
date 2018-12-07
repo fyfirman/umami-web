@@ -43,4 +43,8 @@ class Login extends CI_Controller {
 		$this->session->sess_destroy();
 		redirect(base_url());
 	}
+
+	public function forgot_password(){
+		var_dump($this->Login_model->get_random_password());
+	}
 }

@@ -82,10 +82,12 @@ section{
 
 #tabel{
   display: grid;
-  grid-template-columns: auto auto auto;
+/*  grid-column: auto 100px 1fr 2fr;
+  grid-row: 50px 5em auto;*/
+  grid-template-columns:350px 350px 350px;
   grid-gap: 10px;
   padding: 10px;
-  margin-left: 100px;
+  margin-left: 30px;
   margin-top: 50px;
   margin-right: 100px;
   text-decoration-color: black;
@@ -93,6 +95,7 @@ section{
 }
   
 #tabel > div {
+  /*margin:10px;*/
   text-align: left;
   padding: 10px;
   font-size: 19px;

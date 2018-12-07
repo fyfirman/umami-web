@@ -18,6 +18,13 @@ class Materi_model extends CI_Model{
         $data = $this->db->query("SELECT * FROM materi WHERE id_materi='{$id_materi}'");
         return $data->row();
     }
+
+    function get_nama_matkul_of($id_matkul){
+        $query = "SELECT Nama_Matkul FROM matkul WHERE id_matkul='{$id_matkul}'";
+        $data = $this->db->query($query);
+        return $data->row();
+        
+    }
 }
 
 ?>

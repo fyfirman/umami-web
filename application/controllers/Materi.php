@@ -7,13 +7,14 @@ class Materi extends CI_Controller {
 		$this->load->model('Materi_model');
 	}
 
-	public function index($matkul)
+	public function index($id_matkul)
 	{
-		$data['materi'] = $this->Materi_model->get_materi_of($matkul);
+		$data['materi'] = $this->Materi_model->get_materi_of($id_matkul);
+		$data['matkul'] = $this->Materi_model->get_nama_matkul_of($id_matkul);
 		
 		// Debug data
 		// echo '<pre>';
-		// var_dump($data['materi']);
+		// var_dump($data);
 		// echo '</pre>';
 
 		$this->load->view('component/header.php');

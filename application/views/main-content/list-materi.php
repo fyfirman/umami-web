@@ -1,14 +1,14 @@
 <section>
   <div class="container bg-4 text-left" style="margin-bottom: 0px; padding-bottom: 30px;">  
-  <h3>Matematika Diskrit</h3>
+  <h3><?= $matkul->Nama_Matkul ?></h3>
   <h4>Dosen : Akik Hidayat</h4>
   <div id="tabel">
     <?php foreach ($materi as $obj):?>
       <div>
-        <a href="<?php echo base_url()?>download/<?php echo $obj['id_materi']?>">
-          <div class="type-containter type-<?php echo $obj['jenis'];?>"><h5>PDF</h5></div>
+        <a href="<?= base_url()?>download/<?= $obj['id_materi']?>">
+          <div class="type-containter type-<?= $obj['jenis'];?>"><h5>PDF</h5></div>
           <div style="margin-top: 5px; text-indent: 20px;">
-             <?php echo $obj['nama_materi']; ?>
+              <?= $obj['nama_materi']; ?>
           </div>
         </a>
       </div>

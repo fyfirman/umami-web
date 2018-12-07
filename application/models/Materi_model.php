@@ -19,8 +19,8 @@ class Materi_model extends CI_Model{
         return $data->row();
     }
 
-    function get_nama_matkul_of($id_matkul){
-        $query = "SELECT Nama_Matkul FROM matkul WHERE id_matkul='{$id_matkul}'";
+    function get_nama_matkul_and_dosen_of($id_matkul){
+        $query = "SELECT matkul.Nama_Matkul, dosen.Nama_Dosen FROM matkul,dosen WHERE matkul.id_dosen=dosen.id_dosen AND id_matkul='{$id_matkul}'";
         $data = $this->db->query($query);
         return $data->row();
         

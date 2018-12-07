@@ -1,7 +1,7 @@
 <section>
   <div class="container bg-4 text-left" style="margin-bottom: 0px; padding-bottom: 30px;">  
   <h3><?= $matkul->Nama_Matkul ?></h3>
-  <h4>Dosen : Akik Hidayat</h4>
+  <h4>Dosen : <?= $matkul->Nama_Dosen ?></h4>
   <div id="tabel">
     <?php foreach ($materi as $obj):?>
       <div>

@@ -125,6 +125,7 @@ section{
 /*paging*/
 .center{
   text-align: center;
+  margin-top: 17.1%;
 }
 .pagination {
   display: inline-block;

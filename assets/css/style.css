@@ -82,14 +82,13 @@ section{
 
 #tabel{
   display: grid;
-  grid-template-columns:350px 350px 350px;
+  grid-template-columns:35% 35% 35%;
   grid-gap: 10px;
   padding: 10px;
   margin-left: 30px;
   margin-top: 50px;
   margin-right: 100px;
   text-decoration-color: black;
-
 }
   
 #tabel > div {
@@ -128,8 +127,8 @@ section{
   text-align: center;
 }
 .pagination {
-    display: inline-block;
-    background-color: white;
+  display: inline-block;
+  background-color: white;
 }
 
 .pagination a {

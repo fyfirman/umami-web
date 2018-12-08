@@ -2,7 +2,7 @@
 	<div id="formContent">
 		<!-- Tabs Titles -->
 		<h2 class="signMenu active">Login</h2>
-		<h2 class="signMenu inactive underlineHover">Register</h2>
+		<a href="register"><h2 class="signMenu inactive underlineHover">Register</h2></a>
 
 		<!-- Icon -->
 		<div class="fadeIn first">

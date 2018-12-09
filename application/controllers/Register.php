@@ -17,26 +17,13 @@ class Register extends CI_Controller {
 
 	public function register_action(){
 		//get username and password from view
-		$username = $this->input->post('username');
-		$password = $this->input->post('password');
-		$password = $this->input->post('password');
-		//check username is correct or not
-		// $status_login = $this->Login_model->check_login($username,$password);
-		// if($status_login){
-		// 	//add data to session
-		// 	$data_session = array('username' => $username, 'status' => $status_login);
-		// 	$this->session->set_userdata($data_session);
-		// 	redirect(base_url());
-		// }else{
-		// 	echo "Username dan password salah !";
-		// }
-
-		//debug code
-		// $data_login = array('username' => $username, 'password' => $password, 'status' => $status_login);
-		// var_dump($data_login);
-		// die();
-
-
+		$data['username'] = $this->input->post('username');
+		$data['email'] = $this->input->post('email');
+		$data['password'] = $this->input->post('password');
+		
+		// var_dump($data);
+		
+		$status = $this->Register_model->register($data);
 	}
 
 	public function logout(){

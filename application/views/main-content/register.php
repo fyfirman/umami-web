@@ -14,7 +14,7 @@
 			<input type="text" id="login" class="fadeIn second signForm" name="username" placeholder="Username">
 			<input type="email" id="email" class="fadeIn third signForm" name="email" placeholder="Email">
 			<input type="password" id="password" class="fadeIn fourth signForm" name="password" placeholder="Password">
-			<input type="password" id="password" class="fadeIn fifth signForm" name="password" placeholder="Confirm Password">
+			<input type="password" id="password" class="fadeIn fifth signForm" name="confirm-password" placeholder="Confirm Password">
 			<input type="submit" id="signButton" class="fadeIn sixth" value="Register">
 		</form>
 

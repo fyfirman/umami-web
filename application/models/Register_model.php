@@ -1,13 +1,15 @@
- <?php
- // menyiapkan query
- class Register_model extends CI_Model{
-    function check_register(){
-        $data = $this->db->query("INSERT INTO user (nama_user,password,email)VALUES ('$username','$password','$email')");
-        if($data->num_rows() > 0){
-            return true;
-        }else{
-            return false;
-        }
+<?php
+// menyiapkan query
+class Register_model extends CI_Model{
+    function register($data){
+        // var_dump($data);
+        $username = $data['username'];
+        $password = $data['password'];
+        $email = $data['email'];
+        
+        $query = $this->db->query("INSERT INTO user(nama_user,password,email) VALUES ('$username','$password','$email')");
+        
+        return $query;
     }
 
     function get_random_password(){
@@ -20,6 +22,5 @@
         }
         return $randomString;
     }
-
 }
 ?>

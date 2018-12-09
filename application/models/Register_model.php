@@ -4,7 +4,7 @@ class Register_model extends CI_Model{
     function register($data){
         // var_dump($data);
         $username = $data['username'];
-        $password = $data['password'];
+        $password = md5($data['password']);
         $email = $data['email'];
         
         $query = $this->db->query("INSERT INTO user(nama_user,password,email) VALUES ('$username','$password','$email')");

@@ -6,7 +6,7 @@
     <?php foreach ($materi as $obj):?>
       <div>
         <a href="<?= base_url()?>download/<?= $obj['id_materi']?>">
-          <div class="type-containter type-<?= $obj['jenis'];?>"><h5>PDF</h5></div>
+          <div class="type-containter type-<?= $obj['jenis'];?>"><h5><?php echo $obj['jenis']; ?></h5></div>
           <div style="margin-top: 5px; text-indent: 20px;">
               <?= $obj['nama_materi']; ?>
           </div>

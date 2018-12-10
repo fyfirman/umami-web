@@ -14,7 +14,7 @@ class Register extends CI_Controller {
 		$this->load->view('component/header.php');
 		$this->load->view('component/navbar.php');
 
-		$this->form_validation->set_rules('username','Username','required');
+		$this->form_validation->set_rules('username','Username','required|min_length[6]');
 		$this->form_validation->set_rules('email','Email','required|valid_email');
 		$this->form_validation->set_rules('password','Password','required|min_length[8]|max_length[20]');
 		

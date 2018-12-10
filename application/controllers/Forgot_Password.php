@@ -18,4 +18,17 @@ class Forgot_Password extends CI_Controller {
 	public function forgot_password(){
 		var_dump($this->User_model->get_random_password());
 	}
+
+	public function forgot_action(){
+		$username = $this->input->post('username');
+		$email = $this->input->post('email');
+		$password = md5($this->input->post('password'));
+
+		if($this->User_model->check_forgot($username,$email)){
+			$this->User_model->update_password($username,$password);
+		}
+
+		// var_dump($this->User_model->check_forgot($username,$email));	
+		// var_dump($username);
+	}
 }

@@ -4,6 +4,18 @@
 
 
 /*navbar*/
+.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: white;
+  z-index: 999;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+}
 .nav-desktop{
   /*font-weight: bold;*/
   font-family: 'Open Sans', sans-serif;;
@@ -17,8 +29,8 @@
   text-align: right;
 }
 @media (max-width : 600px) {
-    #hello-message {display:none;}
-    #brand-logo{text-align: left;}
+  #hello-message {display:none;}
+  #brand-logo{text-align: left;}
 }
 
 
@@ -69,10 +81,13 @@ section{
 }
 
 .type-ppt{
-  background: linear-gradient(to right, #e62420,  #a80d0d);
+  background: linear-gradient(to right, #e68620,  #e86607);
 }
 .type-pdf{
-  background: linear-gradient(to right, #e68620,  #e86607);  
+  background: linear-gradient(to right, #e62420,  #a80d0d);  
+}
+.type-doc{
+  background: linear-gradient(to right, #518bff,  #2264e8);  
 }
 
 .type-containter > h5{
@@ -133,18 +148,18 @@ section{
 }
 
 .pagination a {
-    color: #007791;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
+  color: #007791;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
 }
 
 .pagination a.active {
-    background-color: #7D8CA3;
-    color: white;
-    border: 1px solid #4CAF50;
+  background-color: #7D8CA3;
+  color: white;
+  border: 1px solid #4CAF50;
 }
 
 .pagination a:hover:not(.active) {background-color: #007791;color: white;}
@@ -238,7 +253,7 @@ footer{
 }
 
 .gradient{
-    border-top: 10px #efeff1; 
+  border-top: 10px #efeff1; 
 }
 .footer-color{
   height: 5px;

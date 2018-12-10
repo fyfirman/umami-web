@@ -55,6 +55,7 @@ $route['login'] = 'login';
 $route['logout'] = 'login/logout';
 $route['register']= 'register';
 $route['forgot-password']= 'forgot_Password';
+$route['forgot-action']= 'forgot_Password/forgot_action';
 $route['default_controller'] = 'homepage';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

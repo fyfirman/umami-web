@@ -4,8 +4,8 @@
 		<h2 class="">Forgot Password</h2>
 
 		<!-- Forgot password Form -->
-		<form class="" action="<?= base_url('');?>" method="post">
-			<input type="text" id="" class="fadeIn second signForm" name="" placeholder="Username">
+		<form class="login" action="<?= base_url('forgot-action');?>" method="post">
+			<input type="text" id="" class="fadeIn second signForm" name="username" placeholder="Username">
             <input type="email" id="email" class="fadeIn third signForm" name="email" placeholder="Email">
             <input type="password" id="password" class="fadeIn fourth signForm" name="password" placeholder="New Password" onkeyup='match_password();'>
 			<input type="password" id="confirm-password" class="fadeIn fifth signForm" name="confirm-password" placeholder="Confirm New Password" onkeyup='match_password();'>

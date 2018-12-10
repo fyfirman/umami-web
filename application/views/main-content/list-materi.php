@@ -4,14 +4,12 @@
   <h4>Dosen : <?= $matkul->Nama_Dosen ?></h4>
   <div id="tabel">
     <?php foreach ($materi as $obj):?>
-      <div>
         <a href="<?= base_url()?>download/<?= $obj['id_materi']?>">
           <div class="type-containter type-<?= $obj['jenis'];?>"><h5><?php echo $obj['jenis']; ?></h5></div>
           <div style="margin-top: 5px; text-indent: 20px;">
               <?= $obj['nama_materi']; ?>
           </div>
         </a>
-      </div>
     <?php endforeach ?>
   </div>
     

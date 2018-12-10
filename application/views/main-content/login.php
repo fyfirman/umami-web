@@ -18,7 +18,7 @@
 
 		<!-- Remind Passowrd -->
 		<div id="formFooter">
-			<a href="#">Forgot Password?</a>
+			<a href="<?= base_url('forgot-password');?>">Forgot Password?</a>
 		</div>
 
 	</div>

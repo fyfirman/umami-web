@@ -106,7 +106,7 @@ section{
   text-decoration-color: black;
 }
   
-#tabel > div {
+#tabel > a {
   /*margin:10px;*/
   text-align: left;
   padding: 10px;
@@ -115,14 +115,16 @@ section{
   box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
   transition: 0.3s;
 }
-#tabel > div > a{
+
+#tabel > a{
   color:#3c3d3e;
 }
-#tabel > div:hover{
+
+#tabel > a:hover{
   box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 11px 3px rgba(20,23,28,.1);
 }
 
-#tabel > div > a:hover{
+#tabel > a:hover{
   text-decoration: none !important;
 }
 

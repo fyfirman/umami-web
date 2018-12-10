@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Login extends CI_Controller {
 	function __construct(){
 		parent::__construct();
-		$this->load->model('Login_model');
+		$this->load->model('User_model');
 	}
 
 	public function index()
@@ -21,7 +21,7 @@ class Login extends CI_Controller {
 		$password = $this->input->post('password');
 
 		//check username is correct or not
-		$status_login = $this->Login_model->check_login($username,$password);
+		$status_login = $this->User_model->check_login($username,$password);
 		if($status_login){
 			//add data to session
 			$data_session = array('username' => $username, 'status' => $status_login);

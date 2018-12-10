@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Register extends CI_Controller {
 	function __construct(){
 		parent::__construct();
-		$this->load->model('Register_model');
+		$this->load->model('User_model');
 	}
 
 	public function index()
@@ -23,7 +23,7 @@ class Register extends CI_Controller {
 		
 		// var_dump($data);
 		
-		$status = $this->Register_model->register($data);
+		$status = $this->User_model->register($data);
 	}
 
 	public function logout(){

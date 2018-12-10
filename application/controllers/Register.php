@@ -5,13 +5,26 @@ class Register extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('User_model');
+		$this->load->helper(array('form'));
+		$this->load->library('form_validation');
 	}
 
 	public function index()
 	{	
 		$this->load->view('component/header.php');
 		$this->load->view('component/navbar.php');
-		$this->load->view('main-content/register.php');
+
+		$this->form_validation->set_rules('username','Username','required');
+		$this->form_validation->set_rules('email','Email','required');
+		$this->form_validation->set_rules('password','Password','required');
+		
+		if($this->form_validation->run()==FALSE){
+			$this->load->view('main-content/register.php');
+		}
+		else{
+			$this->register_action();
+			echo 'form_validation success';
+		}
 		$this->load->view('component/footer.php');
 	}
 

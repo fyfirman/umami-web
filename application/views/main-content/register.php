@@ -10,7 +10,10 @@
 		</div>
 
 		<!-- Login Form -->
-		<form class="login" action="<?= base_url('register/register_action');?>" method="post">
+		<!-- <form class="login" action="<?= base_url('register/register_action');?>" method="post"> -->
+		<form class="login" action="" method="post">
+			<?php echo validation_errors();?>
+			<?php echo form_open('form');?>
 			<input type="text" id="login" class="fadeIn second signForm" name="username" placeholder="Username">
 			<input type="email" id="email" class="fadeIn third signForm" name="email" placeholder="Email">
 			<input type="password" id="password" class="fadeIn fourth signForm" name="password" placeholder="Password" onkeyup='match_password();'>

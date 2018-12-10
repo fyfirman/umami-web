@@ -4,7 +4,9 @@
 		<h2 class="">Forgot Password</h2>
 
 		<!-- Forgot password Form -->
-		<form class="login" action="<?= base_url('forgot-action');?>" method="post">
+		<form class="login" action="" method="post">
+			<?php echo validation_errors();?>	
+			<?php echo form_open('form');?>
 			<input type="text" id="" class="fadeIn second signForm" name="username" placeholder="Username">
             <input type="email" id="email" class="fadeIn third signForm" name="email" placeholder="Email">
             <input type="password" id="password" class="fadeIn fourth signForm" name="password" placeholder="New Password" onkeyup='match_password();'>

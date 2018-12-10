@@ -5,13 +5,27 @@ class Forgot_Password extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('User_model');
+		$this->load->helper(array('form'));
+		$this->load->library('form_validation');
 	}
 
 	public function index()
 	{	
 		$this->load->view('component/header.php');
 		$this->load->view('component/navbar.php');
-		$this->load->view('main-content/forgot-password.php');
+
+		$this->form_validation->set_rules('username','Username','required');
+		$this->form_validation->set_rules('email','Email','required');
+		$this->form_validation->set_rules('password','Password','required');
+		
+		if($this->form_validation->run()==FALSE){
+			$this->load->view('main-content/forgot-password.php');
+		}
+		else{
+			$this->forgot_action();
+			echo 'Reset password success';
+		}
+		
 		$this->load->view('component/footer.php');
 	}
 

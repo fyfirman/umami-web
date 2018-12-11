@@ -14,7 +14,7 @@
   </div>
     
 
-  <!-- <div class="center">
+  <div class="center">
     <br>
     </br>
     <div class="pagination">
@@ -27,5 +27,5 @@
       <a href="#">6</a>
       <a href="#">&raquo;</a>
     </div>
-  </div>   -->
+  </div>  
 </section>

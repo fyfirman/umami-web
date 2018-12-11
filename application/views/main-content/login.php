@@ -5,8 +5,11 @@
 		<a href="register"><h2 class="signMenu inactive underlineHover">Register</h2></a>
 
 		<!-- Icon -->
-		<div class="fadeIn first">
-			<!-- <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" /> -->
+		<div id="messages" class="fadeIn first">
+			<?php if($this->session->userdata('register_status')){
+				echo "User berhasil dibuat. Silahkan login."; 
+				$this->session->sess_destroy();
+			}?>
 		</div>
 
 		<!-- Login Form -->

@@ -18,12 +18,27 @@ class Forgot_Password extends CI_Controller {
 		$this->form_validation->set_rules('email','Email','required|valid_email');
 		$this->form_validation->set_rules('password','Password','required|min_length[8]|max_length[20]');
 		
+		//Kalo formnya ngawur
 		if($this->form_validation->run()==FALSE){
 			$this->load->view('main-content/forgot-password.php');
 		}
 		else{
-			$this->forgot_action();
-			echo 'Reset password success';
+			//Jika email & username cocok
+			if($this->forgot_action()){
+				$session_data = array(
+					'forgot_status'  => TRUE
+				);
+				$this->session->set_userdata($session_data);
+				redirect('login', 'refresh');
+			}
+			//Jika email & username tidak cocok
+			else{
+				$session_data = array(
+					'forgot_status'  => FALSE
+				);
+				$this->session->set_userdata($session_data);
+				$this->load->view('main-content/forgot-password.php');
+			}
 		}
 		
 		$this->load->view('component/footer.php');
@@ -34,11 +49,14 @@ class Forgot_Password extends CI_Controller {
 		$email = $this->input->post('email');
 		$password = md5($this->input->post('password'));
 
+		//Jika email & username cocok
 		if($this->User_model->check_forgot($username,$email)){
 			$this->User_model->update_password($username,$password);
+			return true;
 		}
+		// Jika email & username tidak cocok
 		else{
-			echo "Username dan email tidak cocok.";
+			return false;
 		}
 	}
 }

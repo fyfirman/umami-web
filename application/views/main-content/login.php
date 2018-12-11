@@ -10,6 +10,10 @@
 				echo "User berhasil dibuat. Silahkan login."; 
 				$this->session->sess_destroy();
 			}?>
+			<?php if($this->session->userdata('forgot_status')){
+				echo "Password berhasil direset. Silahkan login."; 
+				$this->session->sess_destroy();
+			}?>
 		</div>
 
 		<!-- Login Form -->

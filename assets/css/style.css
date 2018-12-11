@@ -105,13 +105,13 @@ section{
   margin-right: 100px;
   text-decoration-color: black;
 }
-@media (max-width : 800px) {
+@media (max-width : 600px) {
   #tabel {
     grid-template-columns: 200% !important;
     margin-left: 0px;
   }
 }
-  
+
 #tabel > a {
   /*margin:10px;*/
   text-align: left;
@@ -221,6 +221,17 @@ div>h3{
 .body-download{
   margin-bottom: 23%;
 }
+
+@media (max-width : 600px) {
+  .body-download{
+    margin-bottom: 97%;
+    padding:25px !important;
+  }
+  .body-download>div>h1{
+    font-size:24pt !important;
+  }
+}
+
 /*
 .File{
   padding-top: 10px;

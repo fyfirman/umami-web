@@ -23,12 +23,13 @@ class Register extends CI_Controller {
 		}
 		else{
 			$this->register_action();
+
+			//Buat session untuk menampilkan register sukses
 			$session_data = array(
 				'register_status'  => TRUE
 			);
 			$this->session->set_userdata($session_data);
 			redirect('login', 'refresh');
-			// $this->load->view('main-content/login.php');
 			
 		}
 		$this->load->view('component/footer.php');

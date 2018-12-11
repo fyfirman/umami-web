@@ -105,6 +105,12 @@ section{
   margin-right: 100px;
   text-decoration-color: black;
 }
+@media (max-width : 800px) {
+  #tabel {
+    grid-template-columns: 200% !important;
+    margin-left: 0px;
+  }
+}
   
 #tabel > a {
   /*margin:10px;*/
@@ -212,7 +218,10 @@ div>h3{
   text-decoration: none;
   border-radius:5px;
 }
-
+.body-download{
+  margin-bottom: 23%;
+}
+/*
 .File{
   padding-top: 10px;
   margin:19px;
@@ -226,8 +235,8 @@ div>h3{
 
 .File:hover{
   box-shadow:0 0 1px 1px rgba(20,23,28,.1), 0 3px 11px 3px rgba(20,23,28,.1);
-}
-
+}*/
+/*
 .circle{
   width: 100px;
   height: 100px;
@@ -237,7 +246,7 @@ div>h3{
   background: linear-gradient(to right, #e62420,  #a80d0d);
   color: white;
 }
-
+*/
 .circle 
 /*footer*/
 footer{

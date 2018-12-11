@@ -1,19 +1,18 @@
 <?php $login = $this->session->userdata('status');?>
 
 <!-- header -->
-<header class="header col-md-12">
+<header class="header body-download col-md-12" style="">
 	<div class="container" style="margin-bottom: 50px;">
 		<h1 style="font-size: 50px; color:white; text-align: left;"><?php echo "{$materi->nama_materi}.{$materi->jenis}"?></h1>
-		<p style="color:white; text-align: left;">Mata Kuliah: Sistem Database II</p>
+		<!-- <p style="color:white; text-align: left;">Mata Kuliah: Sistem Database II</p> -->
 	</div>
 
-	<a href="<?php if($login) echo $materi->link_download; else echo base_url('login	');?>" class="download-button" style=" background: rgba(0,0,0,0); color:white; ">
+	<a href="<?php if($login) echo $materi->link_download; else echo base_url('login');?>" class="download-button" style=" background: rgba(0,0,0,0); color:white; ">
 		<?php if($login) echo "Unduh"; else echo "Kamu belum login!";?>
 	</a>
 </header>
 
-
-<div class="content">
+<!-- <div class="content">
 	<div class="container">  
 		<h4 style="text-indent: 50px; margin-top:30px; color:#727272;">File lainnya</h4>
 		<?php for($i=0; $i<5; $i++): ?>
@@ -29,6 +28,6 @@
 		</a>
 		<?php endfor ?>
 	</div>
-</div>
+</div> -->
 
 

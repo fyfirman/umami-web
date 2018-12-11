@@ -16,7 +16,7 @@
 			</table>
 		</div>
 		<div class="button-wrapper row">
-			<a href="#">
+			<a href="<?= base_url('profile/delete_action')?>">
 				<div id="delete-button" class="col-md-2 col-sm-6">
 					Hapus Akun 
 				</div>

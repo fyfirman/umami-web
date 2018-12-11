@@ -10,7 +10,6 @@ class Profile extends CI_Controller {
 	public function index($id_user)
 	{
         $data['biodata'] = $this->User_model->get_user_profile($id_user);
-		// $data['matkul'] = $this->Materi_model->get_nama_matkul_and_dosen_of($id_matkul);
 		
 		// Debug data
 		// echo '<pre>';
@@ -32,6 +31,9 @@ class Profile extends CI_Controller {
     
 
     public function delete_action(){
-        
+        $id_user = $this->session->userdata('id_user');
+        $data['biodata'] = $this->User_model->delete_user($id_user);
+        $this->session->sess_destroy();
+        redirect('','refresh');
     }
 }

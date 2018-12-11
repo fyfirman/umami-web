@@ -45,6 +45,11 @@ class User_model extends CI_Model{
         $data = $this->db->query("SELECT id_user FROM user WHERE nama_user='{$username}' AND password='{$password}'");
         return $data->row()->id_user;
     }
+
+    //delete account
+    function delete_user($id_user){
+        $this->db->query("DELETE FROM user WHERE id_user='{$id_user}'");
+    }
 }
 
 ?>

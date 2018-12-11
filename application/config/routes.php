@@ -54,6 +54,7 @@ $route['materi/(:num)'] = 'materi/index/$1';
 $route['login'] = 'login';
 $route['logout'] = 'login/logout';
 $route['register']= 'register';
+$route['profile']= 'profile/';
 $route['profile/(:num)']= 'profile/index/$1';
 $route['forgot-password']= 'forgot_Password';
 $route['forgot-action']= 'forgot_Password/forgot_action';

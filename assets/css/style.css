@@ -105,6 +105,12 @@ section{
   margin-right: 100px;
   text-decoration-color: black;
 }
+@media (max-width : 800px) {
+  #tabel {
+    grid-template-columns: 200% !important;
+    margin-left: 0px;
+  }
+}
   
 #tabel > a {
   /*margin:10px;*/

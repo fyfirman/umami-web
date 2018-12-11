@@ -5,7 +5,7 @@
     <!-- Left -->
     <div id="hello-message" class="col-md-4">
           <?php if($login):?>
-            Halo <a href="<?= base_url('profile');?>"><?= $this->session->userdata('username')?></a>!
+            Halo <a href="<?php echo base_url()."profile/".$this->session->userdata('id_user');?>"><?= $this->session->userdata('username')?></a>!
           <?php endif ?>
       </div>
       <!-- Logo -->

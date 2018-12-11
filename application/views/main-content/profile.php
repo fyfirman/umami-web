@@ -6,12 +6,12 @@
 		<div class="bio-wrapper">
 			<table>
 				<tr>
-					<td>Nama</td>
-					<td>Firmansyah Yanuar</td>
+					<td>Username</td>
+					<td><?= $biodata->nama_user?></td>
 				</tr>
 				<tr>
 					<td>Email</td>
-					<td>fyfirman@gmail.com</td>
+					<td><?= $biodata->email?></td>
 				</tr>
 			</table>
 		</div>

@@ -5,12 +5,12 @@
     <!-- Left -->
     <div id="hello-message" class="col-md-4">
           <?php if($login):?>
-            Halo <?= $this->session->userdata('username')?>!
+            Halo <a href="<?= base_url('profile');?>"><?= $this->session->userdata('username')?></a>!
           <?php endif ?>
       </div>
       <!-- Logo -->
       <div id="brand-logo" class="col-md-4 col-xs-6">
-        <a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>/assets/img/umami-logo.png" style="width: 80px"></a>
+        <a href="<?= base_url()?>"><img src="<?= base_url()?>/assets/img/umami-logo.png" style="width: 80px"></a>
       </div>
 
       <!-- logout -->

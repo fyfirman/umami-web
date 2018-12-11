@@ -281,3 +281,55 @@ footer{
   height: 5px;
   background:  linear-gradient(to right, #0099cc,  #1053ae);
 }
+
+/* Profile Content */
+.profile-container{
+  min-height: 75%;
+  background-color: white;
+  border : 1px solid  #DEDFE0;
+  padding: 0 !important;
+}
+
+.title-wrapper{
+  border-bottom: 1px solid  #DEDFE0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.title-wrapper > h1{
+  font-weight: 600 !important;
+}
+
+.bio-wrapper{
+  padding: 2% 5%;
+  min-height: 60%;
+}
+
+.bio-wrapper td{
+  padding: 20px ;
+}
+
+.button-wrapper{
+  border-top:1px solid  #DEDFE0;
+  padding: 10px;
+  margin: 0 !important;
+}
+
+.button-wrapper div{
+  float: right;
+}
+
+#delete-button{
+  text-align: center;
+    color: rgb(0, 52, 64);
+  
+    /* Box */
+    border: 1px solid rgb(0, 52, 64);
+    margin: 0px 0px 0px 24px;
+    padding: 10px 12px 11px;
+
+    /* Effects */
+    border-radius: 2px;
+  }
+}

@@ -21,4 +21,11 @@ class Download extends CI_Controller {
 		$this->load->view('main-content/download.php',$data);
 		$this->load->view('component/footer.php');
 	}
+
+	public function download($id_materi){
+		$data['materi'] = $this->Materi_model->get_materi_by_id($id_materi);
+		$path= $data['materi']->link_download;
+		
+		force_download($path, NULL);
+	}
 }

@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['download/(:num)'] = 'download/index/$1';
+$route['download/get/(:num)'] = 'download/download/$1';
 $route['materi/(:num)'] = 'materi/index/$1';
 $route['login'] = 'login';
 $route['logout'] = 'login/logout';

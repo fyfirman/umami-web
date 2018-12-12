@@ -7,7 +7,7 @@
 		<!-- <p style="color:white; text-align: left;">Mata Kuliah: Sistem Database II</p> -->
 	</div>
 
-	<a href="<?php if($login) echo $materi->link_download; else echo base_url('login');?>" class="download-button" style=" background: rgba(0,0,0,0); color:white; ">
+	<a href="<?php if($login) echo base_url('download/get/'.$materi->id_materi); else echo base_url('login');?>" class="download-button" style=" background: rgba(0,0,0,0); color:white; ">
 		<?php if($login) echo "Unduh"; else echo "Kamu belum login!";?>
 	</a>
 </header>

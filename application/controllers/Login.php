@@ -22,10 +22,11 @@ class Login extends CI_Controller {
 
 		//check username is correct or not
 		$status_login = $this->User_model->check_login($username,$password);
-		$id_user = $this->User_model->get_id($username,$password);
 		if($status_login){
+			$id_user = $this->User_model->get_id($username,$password);
 			//add data to session
 			$data_session = array('username' => $username, 'status' => $status_login, 'id_user' => $id_user);
+			
 			$this->session->set_userdata($data_session);
 			redirect(base_url());
 		}else{
